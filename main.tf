@@ -12,7 +12,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
-data "archive_file"  "lambda_terraform_test" {
+data "archive_file" "lambda_terraform_test" {
   type = "zip"
 
   source_file = "${path.module}/function.py"
